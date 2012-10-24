@@ -1,0 +1,21 @@
+%h1 Listing experiments
+
+%table
+  %tr
+    %th Name
+    %th Times
+    %th
+    %th
+    %th
+
+  - @experiments.each do |experiment|
+    %tr
+      %td= experiment.name
+      %td= experiment.times
+      %td= link_to 'Show', experiment
+      %td= link_to 'Edit', edit_experiment_path(experiment)
+      %td= link_to 'Destroy', experiment, method: :delete, data: { confirm: 'Are you sure?' }
+
+%br
+
+= link_to 'New Experiment', new_experiment_path

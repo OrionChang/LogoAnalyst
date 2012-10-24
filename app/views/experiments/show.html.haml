@@ -1,0 +1,12 @@
+%p#notice= notice
+
+%p
+  %b Name:
+  = @experiment.name
+%p
+  %b Times:
+  = @experiment.times
+
+= link_to 'Edit', edit_experiment_path(@experiment)
+\|
+= link_to 'Back', experiments_path
