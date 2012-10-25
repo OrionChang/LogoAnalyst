@@ -1,21 +1,21 @@
-%h1 Listing experiments
-
-%table
-  %tr
-    %th Name
-    %th Times
-    %th
-    %th
-    %th
-
-  - @experiments.each do |experiment|
+- model_class = Experiment
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.pluralize
+%table.table.table-striped
+  %thead
     %tr
-      %td= experiment.name
-      %td= experiment.times
-      %td= link_to 'Show', experiment
-      %td= link_to 'Edit', edit_experiment_path(experiment)
-      %td= link_to 'Destroy', experiment, method: :delete, data: { confirm: 'Are you sure?' }
+      %th= model_class.human_attribute_name(:name)
+      %th= model_class.human_attribute_name(:times)
+      %th= model_class.human_attribute_name(:created_at)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+    - @experiments.each do |experiment|
+      %tr
+        %td= link_to experiment.name, experiment_path(experiment)
+        %td= experiment.times
+        %td=l experiment.created_at
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), edit_experiment_path(experiment), :class => 'btn btn-mini'
+          = link_to t('.destroy', :default => t("helpers.links.destroy")), experiment_path(experiment), :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'
 
-%br
-
-= link_to 'New Experiment', new_experiment_path
+= link_to t('.new', :default => t("helpers.links.new")), new_experiment_path, :class => 'btn btn-primary'

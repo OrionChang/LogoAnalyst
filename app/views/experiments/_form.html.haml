@@ -1,16 +1,20 @@
-= form_for @experiment do |f|
-  - if @experiment.errors.any?
-    #error_explanation
-      %h2= "#{pluralize(@experiment.errors.count, "error")} prohibited this experiment from being saved:"
-      %ul
-        - @experiment.errors.full_messages.each do |msg|
-          %li= msg
-
-  .field
-    = f.label :name
-    = f.text_field :name
-  .field
-    = f.label :times
-    = f.text_field :times
-  .actions
-    = f.submit 'Save'
+= form_for @experiment, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :_type, :class => 'control-label'
+    .controls
+      = f.text_field :_type, :class => 'text_field'
+  .control-group
+    = f.label :_id, :class => 'control-label'
+    .controls
+      = f.text_field :_id, :class => 'text_field'
+  .control-group
+    = f.label :name, :class => 'control-label'
+    .controls
+      = f.text_field :name, :class => 'text_field'
+  .control-group
+    = f.label :times, :class => 'control-label'
+    .controls
+      = f.text_field :times, :class => 'text_field'
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), experiments_path, :class => 'btn'
