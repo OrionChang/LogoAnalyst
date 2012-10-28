@@ -26,6 +26,20 @@
             %span.icon-bar
             %span.icon-bar
           %a.brand(href="#") LOGOAnalyst
+          %ul.nav.pull-right
+            %li
+              %a(href = "")Signup
+            %li.divider-vertical
+            %li.dropdown
+              %a.dropdown-toggle(href = "#" data-toggle="dropdown")Sign In<strong class = "caret"></strong>
+              .dropdown-menu(style="padding: 15px; padding-bottom: 0px;")
+                %form(accept-charset="UTF-8")
+                  %input#user_username(style="margin-bottom: 15px;" type="text" name="user[username]" size="30" placeholder = "Username")
+                  %input#user_password(style="margin-bottom: 15px;" type="password" name="user[password]" size="30" placeholder = "Password")
+                  %input#user_remember_me(style="float: left; margin-right: 10px;" type="checkbox" name="user[remember_me]" value="1")
+                  %label.string.optional(for="user_remember_me")Remember me
+                  %input.btn.btn-primary(style="clear: left; width: 100%; height: 32px; font-size: 13px;" type="submit" name="commit" value="Sign In")
+                  
           .container.nav-collapse
             %ul.nav
               %li= link_to "Link 1", "/path1"
@@ -52,3 +66,14 @@
       \==================================================
     / Placed at the end of the document so the pages load faster
     = javascript_include_tag "application"
+    
+    :javascript
+    
+      $(function() {
+        // Setup drop down menu
+        $('.dropdown-toggle').dropdown();
+        // Fix input element click problem
+        $('.dropdown input, .dropdown label').click(function(e) {
+        e.stopPropagation();
+        });
+        });
