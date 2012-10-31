@@ -1,4 +1,47 @@
 @import "twitter/bootstrap/bootstrap";
+
+body {
+  padding-bottom: 40px;
+  padding-top: 60px;
+}
+
+.sidebar-nav {
+  padding: 9px 0;
+}
+
+.sidebar-nav-fixed {
+  position: fixed;
+  top: 60px;
+  width: 21.97%;
+}
+
+@media (max-width: 767px) {
+  .sidebar-nav-fixed {
+    width: auto;
+  }
+}
+
+@media (max-width: 979px) {
+  .sidebar-nav-fixed {
+    position: static;
+    width: auto;
+  }
+}
+
+/* for demo purposes (fixed top navbar placement in the fiddle. Ok to remove */
+
+@media (max-width: 767px) {
+  body {
+    padding-top: 0;
+  }
+}
+
+@media (max-width: 979px) {
+  body {
+    padding-top: 0;
+  }
+}
+
 @import "twitter/bootstrap/responsive";
 
 // Set the correct sprite paths

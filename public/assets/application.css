@@ -3730,6 +3730,7 @@ button.close {
 
 .btn:active, .btn.active {
     background-color: #cccccc \9
+
 }
 
 .btn:hover, .btn:active, .btn.active, .btn.disabled, .btn[disabled] {
@@ -3740,6 +3741,7 @@ button.close {
 
 .btn:active, .btn.active {
     background-color: #cccccc \9
+
 }
 
 .btn:first-child {
@@ -3963,6 +3965,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-primary:active, .btn-primary.active {
     background-color: #003399 \9
+
 }
 
 .btn-primary:hover, .btn-primary:active, .btn-primary.active, .btn-primary.disabled, .btn-primary[disabled] {
@@ -3973,6 +3976,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-primary:active, .btn-primary.active {
     background-color: #003399 \9
+
 }
 
 .btn-warning {
@@ -4072,6 +4076,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-warning:active, .btn-warning.active {
     background-color: #c67605 \9
+
 }
 
 .btn-warning:hover, .btn-warning:active, .btn-warning.active, .btn-warning.disabled, .btn-warning[disabled] {
@@ -4082,6 +4087,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-warning:active, .btn-warning.active {
     background-color: #c67605 \9
+
 }
 
 .btn-danger {
@@ -4181,6 +4187,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-danger:active, .btn-danger.active {
     background-color: #942a25 \9
+
 }
 
 .btn-danger:hover, .btn-danger:active, .btn-danger.active, .btn-danger.disabled, .btn-danger[disabled] {
@@ -4191,6 +4198,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-danger:active, .btn-danger.active {
     background-color: #942a25 \9
+
 }
 
 .btn-success {
@@ -4290,6 +4298,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-success:active, .btn-success.active {
     background-color: #408140 \9
+
 }
 
 .btn-success:hover, .btn-success:active, .btn-success.active, .btn-success.disabled, .btn-success[disabled] {
@@ -4300,6 +4309,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-success:active, .btn-success.active {
     background-color: #408140 \9
+
 }
 
 .btn-info {
@@ -4399,6 +4409,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-info:active, .btn-info.active {
     background-color: #24748c \9
+
 }
 
 .btn-info:hover, .btn-info:active, .btn-info.active, .btn-info.disabled, .btn-info[disabled] {
@@ -4409,6 +4420,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-info:active, .btn-info.active {
     background-color: #24748c \9
+
 }
 
 .btn-inverse {
@@ -4508,6 +4520,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-inverse:active, .btn-inverse.active {
     background-color: #080808 \9
+
 }
 
 .btn-inverse:hover, .btn-inverse:active, .btn-inverse.active, .btn-inverse.disabled, .btn-inverse[disabled] {
@@ -4518,6 +4531,7 @@ input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="butto
 
 .btn-inverse:active, .btn-inverse.active {
     background-color: #080808 \9
+
 }
 
 button.btn, input[type="submit"].btn {
@@ -5793,6 +5807,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .navbar .btn-navbar:active, .navbar .btn-navbar.active {
     background-color: #cccccc \9
+
 }
 
 .navbar .btn-navbar:hover, .navbar .btn-navbar:active, .navbar .btn-navbar.active, .navbar .btn-navbar.disabled, .navbar .btn-navbar[disabled] {
@@ -5803,6 +5818,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .navbar .btn-navbar:active, .navbar .btn-navbar.active {
     background-color: #cccccc \9
+
 }
 
 .navbar .btn-navbar .icon-bar {
@@ -6136,6 +6152,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active {
     background-color: #000000 \9
+
 }
 
 .navbar-inverse .btn-navbar:hover, .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active, .navbar-inverse .btn-navbar.disabled, .navbar-inverse .btn-navbar[disabled] {
@@ -6146,6 +6163,7 @@ button.btn.btn-mini, input[type="submit"].btn.btn-mini {
 
 .navbar-inverse .btn-navbar:active, .navbar-inverse .btn-navbar.active {
     background-color: #000000 \9
+
 }
 
 .breadcrumb {
@@ -7356,6 +7374,46 @@ a.label:hover, a.badge:hover {
 
 .affix {
     position: fixed
+}
+
+body {
+    padding-bottom: 40px;
+    padding-top: 60px
+}
+
+.sidebar-nav {
+    padding: 9px 0
+}
+
+.sidebar-nav-fixed {
+    position: fixed;
+    top: 60px;
+    width: 21.97%
+}
+
+@media (max-width: 767px) {
+    .sidebar-nav-fixed {
+        position: static;
+        width: auto
+    }
+}
+
+@media (max-width: 979px) {
+    .sidebar-nav-fixed {
+        top: 70px
+    }
+}
+
+@media (max-width: 767px) {
+    body {
+        padding-top: 0
+    }
+}
+
+@media (max-width: 979px) {
+    body {
+        padding-top: 0
+    }
 }
 
 .clearfix {

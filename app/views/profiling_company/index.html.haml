@@ -1,0 +1,30 @@
+
+%table.table.table-striped
+  %thead
+    %tr
+      %th Company:
+      %th Symbol:
+  %tbody
+    %tr
+      %td= @company.name
+      %td= @company.symbol
+
+= form_for @profile,:url => { :action => "create", :company => @company.id }, :html => { :class => 'form-horizontal' } do |f|
+  .control-group
+    = f.label :beginning, :class => "control-label"
+    .controls
+      = f.date_select :beginning, :class => 'input-append date'
+  .control-group
+    = f.label :ending, :class => "control-label"
+    .controls
+      = f.date_select :ending, :class => 'input-append date'
+  .control-group
+    = f.label :url, :class => 'control-label'
+    .controls
+      = f.text_field :url, :class => 'text_field'
+  .control-group
+    = f.label :logo, :class => 'control-label'
+    .controls
+      = f.file_field :logo, :class => 'file_field'
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'

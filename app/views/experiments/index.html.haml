@@ -11,7 +11,7 @@
   %tbody
     - @experiments.each do |experiment|
       %tr
-        %td= link_to experiment.name, experiment_path(experiment)
+        %td= link_to experiment.name, experiment_show_path(experiment)
         %td= experiment.times
         %td=l experiment.created_at
         %td

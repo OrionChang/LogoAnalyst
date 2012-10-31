@@ -2053,13 +2053,13 @@
         return this.map(function () {
             return this.elements ? v.makeArray(this.elements) : this
         }).filter(function () {
-            return this.name && !this.disabled && (this.checked || an.test(this.nodeName) || un.test(this.type))
-        }).map(function (e, t) {
-            var n = v(this).val();
-            return n == null ? null : v.isArray(n) ? v.map(n, function (e, n) {
-                return{name:t.name, value:e.replace(on, "\r\n")}
-            }) : {name:t.name, value:n.replace(on, "\r\n")}
-        }).get()
+                return this.name && !this.disabled && (this.checked || an.test(this.nodeName) || un.test(this.type))
+            }).map(function (e, t) {
+                var n = v(this).val();
+                return n == null ? null : v.isArray(n) ? v.map(n, function (e, n) {
+                    return{name:t.name, value:e.replace(on, "\r\n")}
+                }) : {name:t.name, value:n.replace(on, "\r\n")}
+            }).get()
     }}), v.param = function (e, n) {
         var r, i = [], s = function (e, t) {
             t = v.isFunction(t) ? t() : t == null ? "" : t, i[i.length] = encodeURIComponent(e) + "=" + encodeURIComponent(t)
@@ -2083,8 +2083,8 @@
         return a >= 0 && (i = e.slice(a, e.length), e = e.slice(0, a)), v.isFunction(n) ? (r = n, n = t) : n && typeof n == "object" && (s = "POST"), v.ajax({url:e, type:s, dataType:"html", data:n, complete:function (e, t) {
             r && u.each(r, o || [e.responseText, t, e])
         }}).done(function (e) {
-            o = arguments, u.html(i ? v("<div>").append(e.replace(yn, "")).find(i) : e)
-        }), this
+                o = arguments, u.html(i ? v("<div>").append(e.replace(yn, "")).find(i) : e)
+            }), this
     }, v.each("ajaxStart ajaxStop ajaxComplete ajaxError ajaxSuccess ajaxSend".split(" "), function (e, t) {
         v.fn[t] = function (e) {
             return this.on(t, e)
@@ -2668,10 +2668,10 @@
                 [r.position().top, n]
             ] || null
         }).sort(function (e, t) {
-            return e[0] - t[0]
-        }).each(function () {
-            t.offsets.push(this[0]), t.targets.push(this[1])
-        })
+                return e[0] - t[0]
+            }).each(function () {
+                t.offsets.push(this[0]), t.targets.push(this[1])
+            })
     }, process:function () {
         var e = this.$scrollElement.scrollTop() + this.options.offset, t = this.$scrollElement[0].scrollHeight || this.$body[0].scrollHeight, n = t - this.$scrollElement.height(), r = this.offsets, i = this.targets, s = this.activeTarget, o;
         if (e >= n)return s != (o = i.last()[0]) && this.activate(o);

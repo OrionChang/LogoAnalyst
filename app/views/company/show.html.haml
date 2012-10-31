@@ -1,0 +1,26 @@
+- model_class = Company
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human
+%p
+  %strong= model_class.human_attribute_name("Sector name") + ':'
+  %br
+  = @company.sector.name
+%p
+  %strong= model_class.human_attribute_name(:name) + ':'
+  %br
+  = @company.name
+%p
+  %strong= model_class.human_attribute_name(:symbol) + ':'
+  %br
+  = @company.symbol
+- @company.profiles.each do |profile|
+  %p
+    %strong= model_class.human_attribute_name(:url) + ':'
+    %br
+    = profile.url
+  %p
+    %strong= model_class.human_attribute_name(:logo) + ':'
+    %br
+    = image_tag(profile.logo.url)
+
+

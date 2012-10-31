@@ -11,6 +11,9 @@ gem 'haml-rails'
 gem 'jquery-rails'
 gem 'thin'
 
+gem "fog", "~> 1.3.1"
+gem "carrierwave-mongoid", :git => "git://github.com/jnicklas/carrierwave-mongoid.git", :branch => "mongoid-3.0"
+
 group :development do
 
 end

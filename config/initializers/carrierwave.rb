@@ -1,0 +1,8 @@
+CarrierWave.configure do |config|
+  config.fog_credentials = {
+      :provider => 'Google',
+      :google_storage_access_key_id => 'GOOGVRUAOD7PL4YAXIZ6',
+      :google_storage_secret_access_key => 'a+O1Q8nyOCo1+X++VefvO56QLJILHanZL08EP+a4'
+  }
+  config.fog_directory = 'logo-analyst-logo'
+end

@@ -1,6 +1,16 @@
 LOGOAnalyst::Application.routes.draw do
 
-  root :to => 'experiments#index'
+
+  get "profiling_company/index"
+  post "profiling_company/create"
+
+  get "company/index"
+  get "company/show"
+
+  get "home/index"
+
+  root :to => 'home#index'
+
 
   resources :experiments
 
