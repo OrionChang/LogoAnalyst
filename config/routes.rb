@@ -1,6 +1,12 @@
 LOGOAnalyst::Application.routes.draw do
 
 
+  get "survey/index"
+  get "survey/edit"
+  get "survey/new"
+  get "survey/show"
+
+
   get "profiling_company/index"
   post "profiling_company/create"
 

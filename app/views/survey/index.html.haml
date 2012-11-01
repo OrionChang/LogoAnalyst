@@ -1,0 +1,19 @@
+- model_class = Question
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human.pluralize
+%table.table.table-striped
+  %thead
+    %tr
+      %th= model_class.human_attribute_name(:question_content)
+      %th= model_class.human_attribute_name(:updated_at)
+      %th=t '.actions', :default => t("helpers.actions")
+  %tbody
+    - @questions.each do |question|
+      %tr
+        %td= link_to truncate(question.question_content, :length => 42), :action => 'show', :id => question
+        %td=l question.updated_at
+        %td
+          = link_to t('.edit', :default => t("helpers.links.edit")), {:action => 'edit', :id => question}, :class => 'btn btn-mini'
+          = link_to t('.destroy', :default => t("helpers.links.destroy")), {:action => 'destroy', :id => question}, :method => :delete, :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-mini btn-danger'
+
+= link_to t('.new', :default => t("helpers.links.new")),  {:action => 'new'}, :class => 'btn btn-primary'

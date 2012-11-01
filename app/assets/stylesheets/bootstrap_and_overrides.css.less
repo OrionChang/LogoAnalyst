@@ -15,10 +15,22 @@ body {
   width: 21.97%;
 }
 
+table {
+  table-layout: fixed;
+  word-wrap: break-word;
+}
+
+.longtext {
+  max-width: 700px;
+  word-wrap: break-word;
+
+}
+
 @media (max-width: 767px) {
   .sidebar-nav-fixed {
     width: auto;
   }
+
 }
 
 @media (max-width: 979px) {
@@ -26,6 +38,7 @@ body {
     position: static;
     width: auto;
   }
+
 }
 
 /* for demo purposes (fixed top navbar placement in the fiddle. Ok to remove */

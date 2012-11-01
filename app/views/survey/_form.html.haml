@@ -1,0 +1,14 @@
+.control-group
+  = f.label :question_content, :class => 'control-label'
+  .controls
+    = f.text_area :question_content, :size => "4x4", :class => 'text_area span9'
+
+= f.fields_for :answers do |answer|
+  = answer.text_field :answer_content, :class => 'span9'
+  = answer.link_to_remove "Remove this answer",:class => 'btn btn-mini btn-danger'
+%hr
+%p= f.link_to_add "Add an alternative answer", :answers,:class => 'btn btn-mini'
+
+.form-actions
+  = f.submit nil, :class => 'btn btn-primary'
+  = link_to t('.back', :default => t("helpers.links.back")), {:action => "index"}, { :class => 'btn'}
