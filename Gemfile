@@ -17,6 +17,8 @@ gem "carrierwave-mongoid", :git => "git://github.com/jnicklas/carrierwave-mongoi
 gem "mini_magick"
 group :development do
 
+  gem "roo"
+
 end
 
 group :production do
