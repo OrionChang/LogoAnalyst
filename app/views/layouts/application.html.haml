@@ -48,8 +48,8 @@
                 =link_to "Company List", company_index_path
               %li{class: ("active" if params[:controller] == 'profiling_company')}
                 =link_to "Create Company Profile", profiling_company_index_path
-              %li{class: ("active" if params[:controller] == 'survey')}
-                =link_to "Manage Survey", survey_index_path
+              %li{class: ("active" if params[:controller] == 'questions')}
+                =link_to "Manage Survey", questions_path
 
     .container-fluid
 

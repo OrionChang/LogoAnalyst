@@ -1,10 +1,7 @@
 LOGOAnalyst::Application.routes.draw do
 
 
-  get "survey/index"
-  get "survey/edit"
-  get "survey/new"
-  get "survey/show"
+  resources :questions
 
 
   get "profiling_company/index"
