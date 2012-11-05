@@ -10,6 +10,12 @@ class Profile
 
 
   embedded_in :company
+  has_many :surveys
+
+  include Counter
+  after_create :inc_count
+  after_destroy :dec_count
+
 
 end
 

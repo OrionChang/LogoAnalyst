@@ -1,6 +1,8 @@
 LOGOAnalyst::Application.routes.draw do
 
 
+  resources :surveys
+
   resources :questions
 
 

@@ -1,0 +1,32 @@
+%table.table.table-striped
+  %thead
+    %tr
+      %th Company:
+      %th Symbol:
+      %th Website:
+      %th Logo:
+  %tbody
+    %tr
+      %td= @profile.company.name
+      %td= @profile.company.symbol
+      %td= @profile.url
+      %td= image_tag(@profile.logo.url)
+
+= form_for @survey, :html => { :class => 'form-horizontal' } do |f|
+
+  - @questions.each do |question|
+    = question.question_content
+      = f.collection_radio_buttons(:answer_id, 1...5)
+
+  .control-group
+    = f.label :_type, :class => 'control-label'
+    .controls
+      = f.text_field :_type, :class => 'text_field'
+  .control-group
+    = f.label :_id, :class => 'control-label'
+    .controls
+      = f.text_field :_id, :class => 'text_field'
+  .form-actions
+    = f.submit nil, :class => 'btn btn-primary'
+
+= link_to t('.cancel', :default => t("helpers.links.cancel")), surveys_path, :class => 'btn'
