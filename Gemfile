@@ -4,18 +4,25 @@ ruby '1.9.3'
 gem 'rails', '3.2.8'
 gem "nested_form"
 gem "simple_form"
-
 gem 'twitter-bootstrap-rails'
+gem 'haml-rails'
+gem 'jquery-rails'
+
+gem 'devise'
+gem 'cancan'
+gem 'rolify'
+gem 'thin'
+
+
 gem 'mongo'
 gem 'bson_ext'
 gem 'mongoid'
-gem 'haml-rails'
-gem 'jquery-rails'
-gem 'thin'
+
 
 gem "fog", "~> 1.3.1"
 gem "carrierwave-mongoid", :git => "git://github.com/jnicklas/carrierwave-mongoid.git", :branch => "mongoid-3.0"
 gem "mini_magick"
+
 group :development do
 
   gem "roo"
