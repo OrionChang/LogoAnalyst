@@ -8,6 +8,7 @@ class Answer
   embedded_in :question
   has_many :surveys
 
+
   include Counter
   after_create :inc_count
   after_destroy :dec_count

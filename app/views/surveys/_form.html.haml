@@ -12,21 +12,18 @@
       %td= @profile.url
       %td= image_tag(@profile.logo.url)
 
-= form_for @survey, :html => { :class => 'form-horizontal' } do |f|
+-# TODO set profile.id into user's cookies
 
-  - @questions.each do |question|
-    = question.question_content
-      = f.collection_radio_buttons(:answer_id, 1...5)
 
-  .control-group
-    = f.label :_type, :class => 'control-label'
-    .controls
-      = f.text_field :_type, :class => 'text_field'
-  .control-group
-    = f.label :_id, :class => 'control-label'
-    .controls
-      = f.text_field :_id, :class => 'text_field'
+= nested_form_for @profile, url: {controller: "surveys" ,action: "create"}, :method => :post do |f|
+  - @surveys.each.with_index do |survey, index|
+    = f.fields_for :surveys, survey do |fs|
+      = @questions[index].question_content
+      - @questions[index].answers.each do |answer|
+        = fs.label answer.answer_content
+        = fs.radio_button(:answer_id, answer.id)
+
+
   .form-actions
     = f.submit nil, :class => 'btn btn-primary'
-
-= link_to t('.cancel', :default => t("helpers.links.cancel")), surveys_path, :class => 'btn'
+    = link_to t('.back', :default => t("helpers.links.back")), {:action => "index"}, { :class => 'btn'}

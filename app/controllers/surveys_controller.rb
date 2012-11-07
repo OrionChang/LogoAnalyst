@@ -1,6 +1,8 @@
 class SurveysController < ApplicationController
   # GET /surveys
   # GET /surveys.json
+  before_filter :init
+
   def index
 
   end
@@ -30,11 +32,13 @@ class SurveysController < ApplicationController
   # GET /surveys/new.json
   def new
     # randomly select an existing company profile with the least response
-    @profile = Company.profile_with_least_survey
 
     # display this profile and all questions
-    @survey = @profile.surveys.new
-    @questions = Question.all
+    @surveys = Array.new
+    Question.all.count.times do
+      @surveys << @profile.surveys.build
+    end
+
 
     respond_to do |format|
       format.html # new.html.erb
@@ -50,10 +54,12 @@ class SurveysController < ApplicationController
   # POST /surveys
   # POST /surveys.json
   def create
-    @survey = Survey.new(params[:survey])
 
+    @profile.assign_attributes(params[:profile])
+
+    #TODO redirection problem
     respond_to do |format|
-      if @survey.save
+      if @profile.save
         format.html { redirect_to @survey, notice: 'Survey was successfully created.' }
         format.json { render json: @survey, status: :created, location: @survey }
       else
@@ -66,10 +72,10 @@ class SurveysController < ApplicationController
   # PUT /surveys/1
   # PUT /surveys/1.json
   def update
-    @survey = Survey.find(params[:id])
+
 
     respond_to do |format|
-      if @survey.update_attributes(params[:survey])
+      if @profile.update_attributes(params[:profile])
         format.html { redirect_to @survey, notice: 'Survey was successfully updated.' }
         format.json { head :no_content }
       else
@@ -89,5 +95,13 @@ class SurveysController < ApplicationController
       format.html { redirect_to surveys_url }
       format.json { head :no_content }
     end
+  end
+
+
+  def init
+    @profile ||= Company.profile_with_least_survey
+    @company ||= @profile._parent
+    @questions ||= Question.all
+
   end
 end

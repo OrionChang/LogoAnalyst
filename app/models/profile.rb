@@ -12,6 +12,8 @@ class Profile
   embedded_in :company
   has_many :surveys
 
+  accepts_nested_attributes_for :surveys
+
   include Counter
   after_create :inc_count
   after_destroy :dec_count
