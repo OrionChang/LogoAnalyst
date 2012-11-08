@@ -1,0 +1,38 @@
+
+
+.modal{:id => "company-show-#{company.id}"}(style="display: none;")
+  .modal-header
+    %a.close(data-dismiss="modal") &#215;
+    %h3=company.name
+  .modal-body
+
+    - model_class = Company
+    .page-header
+      %h3=t '.title', :default => company.name
+
+    %p
+      %strong= model_class.human_attribute_name(:symbol) + ':'
+
+      = company.symbol
+
+    %p
+      %strong= model_class.human_attribute_name("Sector") + ':'
+
+      = company.sector.name
+
+    - company.profiles.each do |profile|
+      %hr
+      .profile
+        .span6
+          %p
+            %strong= model_class.human_attribute_name(:logo) + ':'
+            %br
+            = image_tag(profile.logo.url)
+        .span6
+          %p
+            %strong= model_class.human_attribute_name("Website URL") + ':'
+            %br
+            = profile.url
+
+  .modal-footer
+    %a.btn(data-dismiss="modal" href="#") Close

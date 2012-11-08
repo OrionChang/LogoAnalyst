@@ -17,15 +17,18 @@
                 - sector.companies.each do |company|
 
                   %tr
-                    %td= link_to company.name, :action => 'show', :id => company.id
+                    %td
+                      -#%a(data-toggle="modal" href="#company-show-#{company.id}")=company.name
+                      -#= render :partial => company, :object => company, :remote => true
+
+                      =link_to company.name, company, :remote => true
+
                     %td= company.name
                     %td= company.symbol
 
-
-
-
 - content_for :sidebar do
-  = render :partial => "new"
+  #show_profile
+
 
 
 
