@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e85fcf31-aa63-44a3-9746-c4f2c0f03101" name="Default" comment="">
+    <list default="true" id="e85fcf31-aa63-44a3-9746-c4f2c0f03101" name="Default" comment="DONE: &#10; TRY: Optimize company index page list ajax&#10;TODO: Configuring layout and structuring Companies controller">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/companies_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/companies_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/companies/_list.html.haml" afterPath="$PROJECT_DIR$/app/views/companies/_list.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/companies/index.html.haml" afterPath="$PROJECT_DIR$/app/views/companies/index.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/companies/list.js.erb" afterPath="$PROJECT_DIR$/app/views/companies/list.js.erb" />
     </list>
     <list id="c25074f2-282c-45a3-afe4-9be58df1b0e7" name="New changelist" comment="Changed a lot and add nested form for create survey questions" />
     <ignored path="LOGO_Analyst.iws" />
@@ -58,7 +58,7 @@
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/profiling_company/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="125" selection-start="123" selection-end="123" vertical-scroll-proportion="-5.0">
+            <state line="3" column="42" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.875">
               <folding />
             </state>
           </provider>
@@ -67,13 +67,8 @@
       <file leaf-file-name="index.html.haml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/companies/index.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="63" selection-start="364" selection-end="364" vertical-scroll-proportion="-1.875">
-              <folding>
-                <marker date="1352421852000" expanded="true" signature="0:416" placeholder=".accordion#accordion2" />
-                <marker date="1352421852000" expanded="true" signature="24:393" placeholder="- @industries.each do |industry|" />
-                <marker date="1352421852000" expanded="true" signature="307:393" placeholder=".accordion-body.collapse{:id =&gt; &quot;industry_#{industry.id}&quot;}" />
-                <marker date="1352421852000" expanded="true" signature="368:393" placeholder="- content_for :sidebar do" />
-              </folding>
+            <state line="10" column="126" selection-start="400" selection-end="400" vertical-scroll-proportion="-6.25">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -96,10 +91,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="companies_controller.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="companies_controller.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/companies_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="49" selection-start="249" selection-end="249" vertical-scroll-proportion="0.37151703">
+            <state line="12" column="126" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -108,17 +103,19 @@
       <file leaf-file-name="list.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/companies/list.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="-1.25">
+            <state line="1" column="7" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.625">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="_list.html.haml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="_list.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/companies/_list.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="31" selection-start="376" selection-end="376" vertical-scroll-proportion="-8.75">
-              <folding />
+            <state line="3" column="39" selection-start="113" selection-end="113" vertical-scroll-proportion="0.14516129">
+              <folding>
+                <marker date="1352425969000" expanded="true" signature="0:650" placeholder="  .accordion-body.collapse.in{:id =&gt; &quot;industry_#{@industry.id}&quot;}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -178,11 +175,11 @@
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
         <option value="$PROJECT_DIR$/app/views/companies/_show.html.haml" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/views/companies/index.html.haml" />
-        <option value="$PROJECT_DIR$/app/views/companies/list.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/companies/_list.html.haml" />
         <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/controllers/companies_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/companies/list.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/companies/_list.html.haml" />
+        <option value="$PROJECT_DIR$/app/views/companies/index.html.haml" />
       </list>
     </option>
   </component>
@@ -806,7 +803,15 @@
       <created>1352423520072</created>
       <updated>1352423520072</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="DONE: &#10; TRY: Fix heroku database problem&#10;TODO: Configuring layout and structuring Companies controller">
+      <created>1352424690023</created>
+      <updated>1352424690023</updated>
+    </task>
+    <task id="LOCAL-00013" summary="DONE: &#10; TRY: Fix heroku database problem 1.1&#10;TODO: Configuring layout and structuring Companies controller">
+      <created>1352425003988</created>
+      <updated>1352425003988</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -831,19 +836,19 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="84" y="83" width="1281" height="684" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.5239643" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30612245" sideWeight="0.4224208" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30612245" sideWeight="0.41754672" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30782312" sideWeight="0.46547523" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295362" sideWeight="0.66368514" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940048" sideWeight="0.720679" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21933387" sideWeight="0.67517006" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.21933387" sideWeight="0.6938776" order="0" side_tool="true" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933652" sideWeight="0.69290125" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32482994" sideWeight="0.5264013" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30612245" sideWeight="0.57676685" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.37585035" sideWeight="0.7871649" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32482994" sideWeight="0.46791226" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32482994" sideWeight="0.46466288" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -888,7 +893,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="DONE: Remove mongoid.yml  &#10;TODO: Configuring layout and structuring Companies controller" />
+    <option name="LAST_COMMIT_MESSAGE" value="DONE: &#10; TRY: Optimize company index page list ajax&#10;TODO: Configuring layout and structuring Companies controller" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -912,6 +917,9 @@
     <MESSAGE value="DONE: Companies#show AJAX &#10;TODO: Configuring layout and structuring Companies controller" />
     <MESSAGE value="DONE: Companies#list AJAX &#10;TODO: Configuring layout and structuring Companies controller" />
     <MESSAGE value="DONE: Remove mongoid.yml  &#10;TODO: Configuring layout and structuring Companies controller" />
+    <MESSAGE value="DONE: &#10; TRY: Fix heroku database problem&#10;TODO: Configuring layout and structuring Companies controller" />
+    <MESSAGE value="DONE: &#10; TRY: Fix heroku database problem 1.1&#10;TODO: Configuring layout and structuring Companies controller" />
+    <MESSAGE value="DONE: &#10; TRY: Optimize company index page list ajax&#10;TODO: Configuring layout and structuring Companies controller" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -966,13 +974,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/profiling_company/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="125" selection-start="123" selection-end="123" vertical-scroll-proportion="-5.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/companies/_show.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="16" column="124" selection-start="335" selection-end="335" vertical-scroll-proportion="-10.0">
@@ -994,39 +995,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/companies/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="37" selection-start="127" selection-end="127" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/companies/index.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="63" selection-start="364" selection-end="364" vertical-scroll-proportion="-1.875">
-          <folding>
-            <marker date="1352421852000" expanded="true" signature="0:416" placeholder=".accordion#accordion2" />
-            <marker date="1352421852000" expanded="true" signature="24:393" placeholder="- @industries.each do |industry|" />
-            <marker date="1352421852000" expanded="true" signature="307:393" placeholder=".accordion-body.collapse{:id =&gt; &quot;industry_#{industry.id}&quot;}" />
-            <marker date="1352421852000" expanded="true" signature="368:393" placeholder="- content_for :sidebar do" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/companies/list.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="0" selection-start="145" selection-end="145" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/companies/_list.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="31" selection-start="376" selection-end="376" vertical-scroll-proportion="-8.75">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Gemfile">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="13" selection-start="260" selection-end="260" vertical-scroll-proportion="0.0">
@@ -1034,10 +1002,47 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/companies/show.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="37" selection-start="127" selection-end="127" vertical-scroll-proportion="-1.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/companies/list.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="7" selection-start="98" selection-end="98" vertical-scroll-proportion="-0.625">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/companies_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="49" selection-start="249" selection-end="249" vertical-scroll-proportion="0.37151703">
+        <state line="12" column="126" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/profiling_company/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="42" selection-start="44" selection-end="44" vertical-scroll-proportion="-1.875">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/companies/index.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="126" selection-start="400" selection-end="400" vertical-scroll-proportion="-6.25">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/companies/_list.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="39" selection-start="113" selection-end="113" vertical-scroll-proportion="0.14516129">
+          <folding>
+            <marker date="1352425969000" expanded="true" signature="0:650" placeholder="  .accordion-body.collapse.in{:id =&gt; &quot;industry_#{@industry.id}&quot;}" />
+          </folding>
         </state>
       </provider>
     </entry>

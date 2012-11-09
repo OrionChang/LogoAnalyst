@@ -4,7 +4,7 @@
       .accordion-heading
         %a.accordion-toggle(data-toggle="collapse" data-parent="#accordion2" href="companies/list/#{industry.id}" data-target="#industry_#{industry.id}" data-remote="true")
           =industry.name
-      .accordion-body.collapse{:id => "industry_#{industry.id}"}
+      .accordion-body.collapse{:id => "#{industry.id}"}
 
 
 - content_for :sidebar do
