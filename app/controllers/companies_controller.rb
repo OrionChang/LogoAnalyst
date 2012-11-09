@@ -2,7 +2,7 @@ class CompaniesController < ApplicationController
   # GET /companies
   # GET /companies.json
   def index
-    @industries = IndustryGroup.all.includes(:sectors)
+    @industries = IndustryGroup.all
 
     respond_to do |format|
       format.html # index.html.erb
