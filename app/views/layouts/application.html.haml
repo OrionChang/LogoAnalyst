@@ -52,7 +52,7 @@
               %li{class: ("active" if params[:controller] == 'home')}
                 =link_to "Home", root_path
               %li{class: ("active" if params[:controller] == 'companies')}
-                =link_to "Company List", company_index_path
+                =link_to "Company List", companies_path
               %li{class: ("active" if params[:controller] == 'profiling_company')}
                 =link_to "Create Company Profile", profiling_company_index_path
               %li{class: ("active" if params[:controller] == 'questions')}

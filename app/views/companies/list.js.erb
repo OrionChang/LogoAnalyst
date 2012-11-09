@@ -1,0 +1,2 @@
+var html = "<%= escape_javascript(render(:partial => 'list', :industry => @industry)) %>";
+$("#industry_<%= @industry.id %>").replaceWith(html);

@@ -1,0 +1,21 @@
+.accordion-body.collapse.in{:id => "industry_#{@industry.id}"}
+  .accordion-inner
+    %table.table.table-striped
+      %thead
+        %tr
+          %th Company:
+          %th Sector:
+          %th Symbol:
+      %tbody
+        - @industry.sectors.each do |sector|
+          - sector.companies.each do |company|
+
+            %tr
+              %td
+                -#%a(data-toggle="modal" href="#company-show-#{company.id}")=company.name
+                -#= render :partial => company, :object => company, :remote => true
+
+                =link_to company.name, company, :remote => true
+
+              %td= sector.name
+              %td= company.symbol

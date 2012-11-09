@@ -1,7 +1,7 @@
 #show_profile
   - model_class = Company
   .page-header
-    %h3=t '.title', :default => @company.name
+    %h5=t '.title', :default => @company.name
 
   %p
     %strong= model_class.human_attribute_name(:symbol) + ':'
@@ -23,7 +23,3 @@
       - model_class.human_attribute_name(:logo) + ':'
       %br
       = image_tag(profile.logo.url)
-
-
-
-

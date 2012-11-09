@@ -2,11 +2,18 @@ class CompaniesController < ApplicationController
   # GET /companies
   # GET /companies.json
   def index
-    @industries = IndustryGroup.all
+    @industries = IndustryGroup.all.includes(:sectors)
 
     respond_to do |format|
       format.html # index.html.erb
       format.json { render json: @companies }
+    end
+  end
+
+  def list
+    @industry = IndustryGroup.find(params[:id])
+    respond_to do |format|
+      format.js { render :layout => false }
     end
   end
 
