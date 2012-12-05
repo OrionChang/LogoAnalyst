@@ -10,7 +10,10 @@
       %td= @profile.company.name
       %td= @profile.company.symbol
       %td= @profile.url
-      %td= image_tag(@profile.logo.url)
+      - if @profile.logo.url != nil
+        %td= image_tag(@profile.logo.url)
+      - else
+        %td None
 
 -# TODO set profile.id into user's cookies
 
