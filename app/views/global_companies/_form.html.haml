@@ -1,0 +1,22 @@
+= simple_form_for @global_company, :html => { :class => 'form-horizontal', :multipart => true } do |f|
+  = f.input :country_id,:collection => Country.all, :required => true
+  = f.input :global_industry_id,:collection => GlobalIndustry.all, :required => true
+  = f.input :name, :required => true
+  = f.input :symbol, :required => true
+  = f.simple_fields_for :global_company_profiles do |p|
+    =p.input :rank, :required => true
+    =p.input :logo, :required => true
+
+    =p.input :website_url
+    =p.input :detail_url
+
+    =p.input :market_value
+    =p.input :sales
+    =p.input :profit
+    =p.input :assets
+
+
+
+  .form-actions
+    = f.button :submit, :class => 'btn-primary'
+    = link_to t('.cancel', :default => t("helpers.links.cancel")), global_companies_path, :class => 'btn'

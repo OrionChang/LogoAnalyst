@@ -1,9 +1,12 @@
 LOGOAnalyst::Application.routes.draw do
 
 
+  resources :global_companies
+
   resources :companies
 
-  match 'companies#industry_(:id)' => 'users#list', :constraints => {:id => /[0-9A-Za-z\-\.]+/}
+  match '/companies/new_random_profile' => 'companies#new_random_profile'
+
 
   authenticated :user do
     root :to => 'home#index'
@@ -16,11 +19,6 @@ LOGOAnalyst::Application.routes.draw do
   resources :surveys
 
   resources :questions
-
-
-  get "profiling_company/index"
-  post "profiling_company/create"
-
 
   get "home/index"
   root :to => 'home#index'

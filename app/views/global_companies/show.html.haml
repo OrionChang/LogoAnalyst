@@ -1,0 +1,33 @@
+- model_class = GlobalCompany
+.page-header
+  %h1=t '.title', :default => model_class.model_name.human
+
+%p
+  %strong= model_class.human_attribute_name(:_type) + ':'
+  %br
+  = @global_company._type
+%p
+  %strong= model_class.human_attribute_name(:_id) + ':'
+  %br
+  = @global_company._id
+%p
+  %strong= model_class.human_attribute_name(:name) + ':'
+  %br
+  = @global_company.name
+%p
+  %strong= model_class.human_attribute_name(:symbol) + ':'
+  %br
+  = @global_company.symbol
+%p
+  %strong= model_class.human_attribute_name(:country_id) + ':'
+  %br
+  = @global_company.country_id
+%p
+  %strong= model_class.human_attribute_name(:global_industry_id) + ':'
+  %br
+  = @global_company.global_industry_id
+
+.form-actions
+  = link_to t('.back', :default => t("helpers.links.back")), global_companies_path, :class => 'btn'
+  = link_to t('.edit', :default => t("helpers.links.edit")), edit_global_company_path(@global_company), :class => 'btn'
+  = link_to t('.destroy', :default => t("helpers.links.destroy")), global_company_path(@global_company), :method => "delete", :data => { :confirm => t('.confirm', :default => t("helpers.links.confirm", :default => 'Are you sure?')) }, :class => 'btn btn-danger'

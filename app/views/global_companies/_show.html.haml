@@ -1,0 +1,48 @@
+#show_profile
+  - model_class = GlobalCompany
+  %p
+    .logo(style="position: relative;left: 50%;margin: 0 0 0 -100px;")= image_tag(@global_company.global_company_profiles.last.logo.url)
+
+  %h4(style="text-align:center")=link_to(@global_company.name,@global_company.global_company_profiles.last.website_url)
+
+  .profile(style="margin: 10% 0 0 10%;")
+    %p
+      %strong= model_class.human_attribute_name(:stock_symbol) + ':'
+
+      = @global_company.symbol
+
+    %p
+      %strong= model_class.human_attribute_name(:industry) + ':'
+
+      = @global_company.global_industry.name.html_safe
+
+    %p
+      %strong= model_class.human_attribute_name(:country) + ':'
+
+      = @global_company.country.name.html_safe
+
+    %p
+      %strong= model_class.human_attribute_name(:market_value) + ':'
+
+      = "$" + number_to_human(@global_company.global_company_profiles.last.market_value, :precision => 6)
+    %p
+      %strong= model_class.human_attribute_name(:sales) + ':'
+
+      = "$" + number_to_human(@global_company.global_company_profiles.last.sales, :precision => 6)
+    %p
+      %strong= model_class.human_attribute_name(:profit) + ':'
+
+      = "$" + number_to_human(@global_company.global_company_profiles.last.profit, :precision => 6)
+    %p
+      %strong= model_class.human_attribute_name(:assets) + ':'
+
+      = "$" + number_to_human(@global_company.global_company_profiles.last.assets, :precision => 6)
+
+    %p
+      %strong=link_to('Learn more...',@global_company.global_company_profiles.last.detail_url)
+
+
+
+
+
+

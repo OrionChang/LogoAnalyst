@@ -17,6 +17,7 @@ gem 'thin'
 gem 'mongo'
 gem 'bson_ext'
 gem 'mongoid'
+gem "mongoid-eager-loading"
 
 gem "fog", "~> 1.3.1"
 gem "carrierwave-mongoid", :git => "git://github.com/jnicklas/carrierwave-mongoid.git", :branch => "mongoid-3.0"

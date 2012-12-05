@@ -31,6 +31,11 @@ class SurveysController < ApplicationController
   # GET /surveys/new
   # GET /surveys/new.json
   def new
+
+    Mongoid.identity_map_enabled = true
+
+    @profile = Company.profile_with_least_survey
+    @questions = Question.all
     # randomly select an existing company profile with the least response
 
     # display this profile and all questions
@@ -99,9 +104,7 @@ class SurveysController < ApplicationController
 
 
   def init
-    @profile ||= Company.profile_with_least_survey
-    @company ||= @profile._parent
-    @questions ||= Question.all
+
 
   end
 end

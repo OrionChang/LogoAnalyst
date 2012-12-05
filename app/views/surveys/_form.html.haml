@@ -15,13 +15,17 @@
 -# TODO set profile.id into user's cookies
 
 
-= nested_form_for @profile, url: {controller: "surveys" ,action: "create"}, :method => :post do |f|
+= simple_form_for @profile, url: {controller: "surveys" ,action: "create"}, :method => :post do |f|
   - @surveys.each.with_index do |survey, index|
-    = f.fields_for :surveys, survey do |fs|
+    = f.simple_fields_for :surveys, survey do |fs|
       = @questions[index].question_content
-      - @questions[index].answers.each do |answer|
-        = fs.label answer.answer_content
-        = fs.radio_button(:answer_id, answer.id)
+
+
+
+      = fs.association :answer, :collection => @questions[index].answers, :as => :radio_buttons, :item_wrapper_class => 'inline',:label => '', :label_method => :answer_content
+      %hr
+
+
 
 
   .form-actions
