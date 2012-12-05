@@ -19,9 +19,6 @@
   - @surveys.each.with_index do |survey, index|
     = f.simple_fields_for :surveys, survey do |fs|
       = @questions[index].question_content
-
-
-
       = fs.association :answer, :collection => @questions[index].answers, :as => :radio_buttons, :item_wrapper_class => 'inline',:label => '', :label_method => :answer_content
       %hr
 
