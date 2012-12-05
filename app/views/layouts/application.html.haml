@@ -48,11 +48,16 @@
                   %a=link_to "Sign out", destroy_user_session_path, :method => :delete
 
           .nav-collapse
-            %ul.nav
+            %ul.nav.nav-tabs
               %li{class: ("active" if params[:controller] == 'home')}
                 =link_to "Home", root_path
-              %li{class: ("active" if params[:controller] == 'companies')}
-                =link_to "Company List", companies_path
+              %li.dropdown{class: ("active" if params[:controller] == 'companies' || params[:controller] == 'global_companies')}
+                %a.dropdown-toggle{"data-toggle" =>"dropdown", :href => "#"}
+                  Company
+                  %b.caret
+                %ul.dropdown-menu
+                  %li=link_to "Thai Top 100 Companies", companies_path
+                  %li=link_to "Global Top 200 Companies", global_companies_path
               %li{class: ("active" if params[:controller] == 'questions')}
                 =link_to "Manage Survey", questions_path
 

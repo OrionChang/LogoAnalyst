@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e85fcf31-aa63-44a3-9746-c4f2c0f03101" name="Default" comment="">
+    <list default="true" id="e85fcf31-aa63-44a3-9746-c4f2c0f03101" name="Default" comment="DONE:  &#10;UNDO: &#10; TRY: Try dropdown menu&#10;TODO: dropdown menu">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/surveys_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/surveys_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
     </list>
     <list id="c25074f2-282c-45a3-afe4-9be58df1b0e7" name="New changelist" comment="Changed a lot and add nested form for create survey questions" />
@@ -48,8 +48,19 @@
       <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="51" column="17" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.6231454">
+            <state line="55" column="91" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.4382716">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,12 +103,12 @@
         <option value="$PROJECT_DIR$/app/models/global_company.rb" />
         <option value="$PROJECT_DIR$/app/models/global_company_profile.rb" />
         <option value="$PROJECT_DIR$/db/seeds.rb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/global_companies/_show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/global_companies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/global_companies/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/views/surveys/_form.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/surveys_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       </list>
     </option>
@@ -753,7 +764,11 @@
       <created>1354699007510</created>
       <updated>1354699007510</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="DONE:  survey eager loading&#10;UNDO: survey eager inserting&#10; TRY: &#10;TODO: dropdown menu">
+      <created>1354718335213</created>
+      <updated>1354718335213</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -778,9 +793,10 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="154" y="85" width="1281" height="683" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30286738" sideWeight="0.38242474" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5174939" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30286738" sideWeight="0.38242474" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.455655" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295362" sideWeight="0.66368514" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940048" sideWeight="0.720679" order="1" side_tool="true" content_ui="tabs" />
@@ -794,7 +810,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.46222582" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5174939" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -835,7 +850,7 @@
     <option name="SHOW_VCS_ERROR_NOTIFICATIONS" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="DONE:  Global 200 page, survey basic format&#10; TRY: &#10;TODO: survey eager loading" />
+    <option name="LAST_COMMIT_MESSAGE" value="DONE:  &#10;UNDO: &#10; TRY: Try dropdown menu&#10;TODO: dropdown menu" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -864,6 +879,8 @@
     <MESSAGE value="DONE: &#10; TRY: Optimize company index page list ajax&#10;TODO: Configuring layout and structuring Companies controller" />
     <MESSAGE value="DONE:  Optimize company index page list ajax&#10; TRY: Fixed image upload problem&#10;TODO: Configuring layout and structuring Companies controller" />
     <MESSAGE value="DONE:  Global 200 page, survey basic format&#10; TRY: &#10;TODO: survey eager loading" />
+    <MESSAGE value="DONE:  survey eager loading&#10;UNDO: survey eager inserting&#10; TRY: &#10;TODO: dropdown menu" />
+    <MESSAGE value="DONE:  &#10;UNDO: &#10; TRY: Try dropdown menu&#10;TODO: dropdown menu" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -876,13 +893,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/companies/new_random_profile.html.haml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="34" selection-start="98" selection-end="98" vertical-scroll-proportion="2.125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/models/global_company_profile.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="13" column="30" selection-start="189" selection-end="315" vertical-scroll-proportion="0.18461539" />
@@ -979,9 +989,18 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="0" selection-start="400" selection-end="400" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="17" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.6231454">
+        <state line="55" column="91" selection-start="2358" selection-end="2358" vertical-scroll-proportion="0.4382716">
           <folding />
         </state>
       </provider>
