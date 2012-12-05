@@ -32,15 +32,12 @@ class SurveysController < ApplicationController
   # GET /surveys/new.json
   def new
 
-    Mongoid.identity_map_enabled = true
 
-    @profile = Company.profile_with_least_survey
-    @questions = Question.all
     # randomly select an existing company profile with the least response
 
     # display this profile and all questions
     @surveys = Array.new
-    Question.all.count.times do
+    @questions.count.times do
       @surveys << @profile.surveys.build
     end
 
@@ -65,7 +62,7 @@ class SurveysController < ApplicationController
     #TODO redirection problem
     respond_to do |format|
       if @profile.save
-        format.html { redirect_to @survey, notice: 'Survey was successfully created.' }
+        format.html { redirect_to root_path, notice: 'Response was successfully sent, thank you very much for participation.' }
         format.json { render json: @survey, status: :created, location: @survey }
       else
         format.html { render action: "new" }
@@ -104,7 +101,8 @@ class SurveysController < ApplicationController
 
 
   def init
-
+    @profile ||= Company.profile_with_least_survey
+    @questions ||= Question.all.to_a
 
   end
 end

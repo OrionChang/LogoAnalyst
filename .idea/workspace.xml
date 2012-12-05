@@ -3,7 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="e85fcf31-aa63-44a3-9746-c4f2c0f03101" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/surveys/_form.html.haml" afterPath="$PROJECT_DIR$/app/views/surveys/_form.html.haml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/surveys_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/surveys_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.haml" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
     </list>
     <list id="c25074f2-282c-45a3-afe4-9be58df1b0e7" name="New changelist" comment="Changed a lot and add nested form for create survey questions" />
     <ignored path="LOGO_Analyst.iws" />
@@ -44,82 +45,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="global_companies_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/global_companies_controller.rb">
+      <file leaf-file-name="application.html.haml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="7" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="new.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/surveys/new.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="surveys_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/surveys_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="112" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seeds.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="12" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="survey.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/models/survey.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="29" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.haml" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/surveys/_form.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="107" selection-start="124" selection-end="124" vertical-scroll-proportion="0.30232558">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="seeds2.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/db/seeds2.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="115" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="_form.html.haml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/global_companies/_form.html.haml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="81" selection-start="185" selection-end="257" vertical-scroll-proportion="-1.25">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="51" column="17" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.6231454">
               <folding />
             </state>
           </provider>
@@ -154,7 +83,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/Gemfile" />
         <option value="$PROJECT_DIR$/app/models/country.rb" />
         <option value="$PROJECT_DIR$/app/models/global_industry.rb" />
         <option value="$PROJECT_DIR$/app/views/global_companies/show.js.erb" />
@@ -168,14 +96,15 @@
         <option value="$PROJECT_DIR$/app/views/global_companies/_show.html.haml" />
         <option value="$PROJECT_DIR$/app/controllers/global_companies_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/global_companies/_form.html.haml" />
-        <option value="$PROJECT_DIR$/app/controllers/surveys_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/surveys/_form.html.haml" />
+        <option value="$PROJECT_DIR$/app/controllers/surveys_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.haml" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="118" />
-    <option name="y" value="52" />
+    <option name="x" value="154" />
+    <option name="y" value="85" />
     <option name="width" value="1281" />
     <option name="height" value="683" />
   </component>
@@ -205,6 +134,20 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="RailsProjectView">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LOGO_Analyst" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="LOGO_Analyst" />
+              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -512,34 +455,20 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LOGO_Analyst" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="LOGO_Analyst" />
-              <option name="myItemType" value="org.jetbrains.plugins.ruby.rails.projectView.v2.nodes.RailsModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="recentsLimit" value="5" />
     <property name="options.lastSelected" value="org.jetbrains.plugins.ruby.settings.RubyIdeSdkConfigurable" />
-    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Mongo_Test" />
+    <property name="recentsLimit" value="5" />
     <property name="restartRequiresConfirmation" value="true" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Documents/Mongo_Test" />
     <property name="RakeTaksPopup.undocumentedIncluded" value="false" />
     <property name="RailsGeneratorsPopup.hiddenIncluded" value="false" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="options.searchVisible" value="true" />
     <property name="Ruby.ViewRefParam.DefaultExtension" value="html.erb" />
+    <property name="options.searchVisible" value="true" />
+    <property name="options.splitter.details.proportions" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -726,8 +655,8 @@
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="IRB console.Rails console: LOGO_Analyst" />
-        <item index="1" class="java.lang.String" itemvalue="Rake.db:seed" />
-        <item index="2" class="java.lang.String" itemvalue="IRB console.Rails console: LOGO_Analyst" />
+        <item index="1" class="java.lang.String" itemvalue="IRB console.Rails console: LOGO_Analyst" />
+        <item index="2" class="java.lang.String" itemvalue="Rake.db:seed" />
         <item index="3" class="java.lang.String" itemvalue="IRB console.Rails console: LOGO_Analyst" />
         <item index="4" class="java.lang.String" itemvalue="IRB console.Rails console: LOGO_Analyst" />
       </list>
@@ -848,24 +777,24 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="118" y="52" width="1281" height="683" extended-state="0" />
+    <frame x="154" y="85" width="1281" height="683" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5174939" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30286738" sideWeight="0.38730675" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30286738" sideWeight="0.38242474" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.30769232" sideWeight="0.455655" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3295362" sideWeight="0.66368514" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24940048" sideWeight="0.720679" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24572824" sideWeight="0.6971326" order="0" side_tool="true" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.25061026" sideWeight="0.6971326" order="0" side_tool="true" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32933652" sideWeight="0.69290125" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30286738" sideWeight="0.60699755" order="10" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3685152" sideWeight="0.74938977" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30286738" sideWeight="0.6118796" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3673835" sideWeight="0.74450773" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32437277" sideWeight="0.44833198" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3265306" sideWeight="0.46222582" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3255814" sideWeight="0.5174939" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -947,13 +876,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/models/global_company.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="19" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/companies/new_random_profile.html.haml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="34" selection-start="98" selection-end="98" vertical-scroll-proportion="2.125">
@@ -963,9 +885,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/global_company_profile.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="189" selection-end="315" vertical-scroll-proportion="0.18461539">
-          <folding />
-        </state>
+        <state line="13" column="30" selection-start="189" selection-end="315" vertical-scroll-proportion="0.18461539" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/profiling_company_controller.rb">
@@ -998,49 +918,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/models/survey.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="29" selection-start="175" selection-end="175" vertical-scroll-proportion="0.0">
+        <state line="9" column="29" selection-start="175" selection-end="175" vertical-scroll-proportion="0.051903114">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds2.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="115" selection-start="576" selection-end="576" vertical-scroll-proportion="0.0">
+        <state line="8" column="115" selection-start="576" selection-end="576" vertical-scroll-proportion="0.4152249">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/global_companies/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="81" selection-start="185" selection-end="257" vertical-scroll-proportion="-1.25">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+        <state line="2" column="81" selection-start="185" selection-end="257" vertical-scroll-proportion="0.053956833">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/db/seeds.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="12" selection-start="413" selection-end="413" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/surveys_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="112" selection-start="908" selection-end="908" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/global_companies_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="7" selection-start="456" selection-end="456" vertical-scroll-proportion="0.0">
+        <state line="11" column="12" selection-start="413" selection-end="413" vertical-scroll-proportion="0.048076924">
           <folding />
         </state>
       </provider>
@@ -1054,7 +953,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/surveys/_form.html.haml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="107" selection-start="124" selection-end="124" vertical-scroll-proportion="0.30232558">
+        <state line="25" column="31" selection-start="806" selection-end="806" vertical-scroll-proportion="0.41666666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/global_companies_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="53" selection-start="575" selection-end="575" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/surveys_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="49" column="102" selection-start="900" selection-end="900" vertical-scroll-proportion="0.51903117">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.haml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="51" column="17" selection-start="2022" selection-end="2022" vertical-scroll-proportion="0.6231454">
           <folding />
         </state>
       </provider>
