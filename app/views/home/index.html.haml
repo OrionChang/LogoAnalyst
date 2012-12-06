@@ -1,8 +1,13 @@
 .hero-unit
- %h1 Hello, world!
- %p This  is  a  template for a simple marketing or informational website.  It  includes  a large callout called the hero unit and three  supporting  pieces of  content. Use it as a starting point to create  something more  unique.
- %p
- %a.btn.btn-primary.btn-large Learn more &raquo;
+ %h1 Corporate Logo Analysis
+ %hr
+ %p This web-enabled online database is housed at BUUIC
+ %p <a href="http://buuic.buu.ac.th/ic/">Burapha University International College</a>
+ %p It analysis corporation and their corporate logos
+ %p Both graphics (shapes,colors and text fonts)
+ %a.btn.btn-primary.btn-large(data-toggle="modal" href="#learnmore" type="button")Learn more &raquo;
+ =render "more"
+
 
 
 
@@ -11,8 +16,15 @@
 
 
 - content_for :sidebar do
- %ul.nav.nav-list
-  %li.nav-header Sidebar
-  %li= link_to "Link 4", "/path1"
-  %li= link_to "Link 5", "/path2"
-  %li= link_to "Link 6", "/path3"
+ - if current_user.blank?
+  .welcome
+   Welcome, please
+   %a=link_to "sign in", new_user_session_path, :method => :get
+   or
+   %a=link_to "sign up", new_user_registration_path, :method => :get
+   = "."
+ -else
+  .welcome
+   Welcome back,
+   =current_user.name
+
